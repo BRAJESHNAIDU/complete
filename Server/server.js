@@ -12,7 +12,7 @@ const PORT= process.env.PORT || 8000
 app.use(cors())
 app.use(express.json())
 
-mongoose.connect(process.env.MONGODB_URI,{
+mongoose.connect(process.env.MONGODB_URI + '/blog',{
     useNewUrlParser:true,
     useUnifiedTopology:true
 })
